@@ -1,0 +1,11 @@
+tupla1 = 1, 2
+tupla2 = (1, 2)
+tupla3 = (4,)
+
+# AMBOS TODOS SÃO MANEIRAS DE DEFINIR UMA TUPLA
+# TUPLAS SÃO IMUTÁVEIS MAS PODEM SER SOBESCRITAS
+
+tupla1 = tupla1 + tupla2
+
+# ELA PODE SER SOBESCRITA
+
