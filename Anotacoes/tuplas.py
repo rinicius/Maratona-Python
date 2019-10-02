@@ -9,3 +9,4 @@ tupla1 = tupla1 + tupla2
 
 # ELA PODE SER SOBESCRITA
 
+print(tupla2[1])
