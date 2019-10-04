@@ -28,11 +28,6 @@ print(contagem)
 lista.append(1)
 print(lista)
 
-# Possivel adicionar listas dentro da lista
-
-lista.append([1, 2])
-print(lista)
-
 # Extend faz o mesmo porem com mais valores
 
 lista.extend([1, 3, 4, 5, 6, 7, 11, 33, 4])
@@ -40,6 +35,12 @@ print(lista)
 
 lista.extend("eae")
 print(lista)
+
+# Possivel adicionar listas dentro da lista
+
+lista.append([1, 2])
+print(lista)
+
 
 # Possivel escolher o indice para adicionar
 
@@ -95,6 +96,7 @@ lista = lista.split()
 # Enumerar um array
 
 for indice, elemento in enumerate(lista):
+    print(enumerate(lista))
     print(indice, elemento)
     print('enumerado')
 
