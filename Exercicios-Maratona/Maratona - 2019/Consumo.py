@@ -1,3 +1,4 @@
+import math
 """
 
 Consumo
@@ -15,31 +16,37 @@ Media da frota = 11.3
 Obs: *, o que devera aparecer como resultado.
 
 """
-qtd = int(input('Insira a qtd'))
+qtd = int(input())
 carro = list()
 media = 0
 cont = 0
 
-
-    
 for i in range(0, qtd):
-    arr = input('Placa, km, litros')
+    qtd += 1
+    arr = input()
     cont += 1
-    if arr == 1:
+    if arr == 0:
         break
     else:
         carro.append(arr)
 
-
+mediac = list()
+mediaf = []
+placal = list()
+placaf = list()
 
 for i in range(len(carro)):
 
     placa, km, litro = carro[i].split()
     km = float(km)
     litro = float(litro)
+    mediac.append((km/litro))
     media += km/litro
+    placal.append(placa)
 
 media = media / qtd
 
-
-print(media)
+valores, nomes = list(zip(*sorted(zip(mediac, placal))))
+print(nomes[0])
+print(nomes[1])
+print(nomes[2])
